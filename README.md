@@ -1,16 +1,24 @@
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/lays147/terraform-aws-lambda) ![GitHub](https://img.shields.io/github/license/lays147/terraform-aws-lambda)
+
 # Terraform module to create Lambda Functions
 
 This terraform module creates a lambda function
-with given parameters. You can build the lambda without
-the source code or with. 
+
+with given parameters. You can build the lambda with or without
+the source code zip.
+You can also attach IAM Policies that the Lambda may need to operate.
+
 Check the input variables to see how to configure the module.
+
+This module is published in [Terraform Registry](https://registry.terraform.io/modules/lays147/lambda/aws/latest).
 
 ## Example
 
 ### Without VPC
 ```hcl
 module "my-lambda-function" {
-    source            = "git@github.com:lays147/terraform-aws-lambda.git"
+    source            = "lays147/lambda/aws"
+    version           = "0.1.1"
     description       = "Description of the lambda function"
     environment_vars  = { 
         env_name  = env_value, 
@@ -31,7 +39,8 @@ module "my-lambda-function" {
 
 ```hcl
 module "my-lambda-function" {
-    source            = "git@github.com:lays147/terraform-aws-lambda.git"
+    source            = "lays147/lambda/aws"
+    version           = "0.1.1"
     description       = "Description of the lambda function"
     environment_vars  = { 
         env_name  = env_value, 
