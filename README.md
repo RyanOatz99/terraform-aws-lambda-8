@@ -1,4 +1,4 @@
-![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/lays147/terraform-aws-lambda) ![GitHub](https://img.shields.io/github/license/lays147/terraform-aws-lambda)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/lays147/terraform-aws-lambda) ![GitHub](https://img.shields.io/github/license/lays147/terraform-aws-lambda) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/lays147/terraform-aws-lambda/Terraform?label=terraform%20validate)
 
 # Terraform module to create Lambda Functions
 
